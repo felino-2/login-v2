@@ -1,0 +1,16 @@
+tva-experience-dev2-login
+tva-experience-dev2-loginEmail
+tva-experience-dev2-verifyToken
+tva-experience-dev2-registerEmail
+tva-experience-dev2-sendEmail
+tva-experience-dev2-recoveryPassword
+tva-experience-dev2-verifyAccount
+tva-experience-dev2-resendCode
+tva-experience-dev2-changePassword
+tva-experience-dev2-verifySession
+tva-experience-dev2-verifyProvider
+tva-experience-dev2-facebookLikes
+tva-experience-dev2-historyChannel
+tva-experience-dev2-loginAnonymous
+tva-experience-dev2-addTransitionToken
+tva-experience-dev2-verifyTransitionToken

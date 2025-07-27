@@ -1,0 +1,296 @@
+# ===================================
+# .gitignore para Proyecto SAM TVA Experience
+# ===================================
+
+# ===== AWS SAM =====
+# Build artifacts
+.aws-sam/
+samconfig.toml.bak
+packaged-template.yaml
+packaged-template.yml
+
+# SAM CLI cache
+.aws-sam-cli-cache/
+
+# ===== Node.js =====
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# ===== Python (si se usa) =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ===== Logs =====
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# ===== Runtime y Cache =====
+.npm
+.eslintcache
+.node_repl_history
+*.tgz
+.yarn-integrity
+.cache/
+
+# ===== Entornos y Configuración =====
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ===== IDEs y Editores =====
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ===== Sistema Operativo =====
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.tmp
+*.temp
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===== Testing y Reportes =====
+# Newman (Postman CLI) reportes
+postman/reports/
+postman/results/
+postman/*.html
+postman/*.xml
+postman/*.json.bak
+
+# Test results
+test-results/
+coverage/
+*.lcov
+junit.xml
+test-report.html
+results.html
+results.xml
+
+# ===== Archivos Temporales =====
+# Archivos temporales generales
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+*.swp
+*.swo
+
+# Archivos de compilación
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+
+# ===== Secrets y Credenciales =====
+# AWS Credentials (nunca commitear)
+.aws/credentials
+.aws/config
+aws-credentials.json
+credentials.json
+
+# Claves y secretos
+*.pem
+*.key
+*.p12
+*.pfx
+secrets.json
+.secrets
+.env.secret
+
+# ===== Documentación Generada =====
+# Documentación auto-generada
+docs/generated/
+api-docs/
+swagger-ui/
+redoc/
+
+# ===== Cliente Generado =====
+# Clientes generados por OpenAPI
+client-js/
+client-python/
+client-java/
+generated-client*/
+sdk/
+
+# ===== Dependencias Globales =====
+# Newman y herramientas CLI globales (no incluir en repo)
+newman/
+.newman/
+
+# Swagger tools
+swagger-codegen-cli.jar
+openapi-generator-cli.jar
+
+# ===== Archivos de Configuración Local =====
+# Configuraciones locales específicas del desarrollador
+.vscode/settings.json
+.idea/workspace.xml
+local.properties
+local-config.json
+dev-config.json
+
+# ===== Build y Deploy =====
+# Archivos de build
+build/
+dist/
+out/
+target/
+
+# Deployment artifacts
+deployment/
+deploy.zip
+lambda-deployment-*.zip
+
+# ===== Bases de Datos Locales =====
+# SQLite
+*.sqlite
+*.sqlite3
+*.db
+
+# ===== Archivos de Respaldo =====
+# Respaldos automáticos
+*.backup
+*.bak
+*~
+
+# ===== Archivos Específicos del Proyecto =====
+# Archivos de configuración sensibles
+samconfig.toml.prod
+samconfig.toml.staging
+production.env
+staging.env
+
+# Archivos de prueba temporales
+test-*.json
+temp-*.json
+debug-*.log
+
+# ===== Comentarios para Desarrolladores =====
+# NOTA: Este .gitignore está diseñado para:
+# 1. Excluir dependencias que se pueden reinstalar (node_modules, etc.)
+# 2. Proteger credenciales y secretos
+# 3. Evitar archivos temporales y de sistema
+# 4. Mantener limpio el repositorio para nuevos desarrolladores
+#
+# IMPORTANTE:
+# - Siempre revisar antes de commitear archivos sensibles
+# - Usar 'git status' para verificar qué se va a commitear
+# - Configurar variables de entorno en lugar de hardcodear secretos

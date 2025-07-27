@@ -1,0 +1,62 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "APIGatewayReadAccess",
+            "Effect": "Allow",
+            "Action": [
+                "apigateway:GET",
+                "apigateway:POST"
+            ],
+            "Resource": [
+                "arn:aws:apigateway:*::/restapis",
+                "arn:aws:apigateway:*::/restapis/*"
+            ]
+        },
+        {
+            "Sid": "LambdaReadAccess",
+            "Effect": "Allow",
+            "Action": [
+                "lambda:GetFunction",
+                "lambda:GetFunctionConfiguration",
+                "lambda:ListFunctions",
+                "lambda:GetPolicy",
+                "lambda:ListVersionsByFunction",
+                "lambda:ListAliases",
+                "lambda:GetFunctionCodeSigningConfig",
+                "lambda:ListTags"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "IAMReadAccess",
+            "Effect": "Allow",
+            "Action": [
+                "iam:GetRole",
+                "iam:ListRolePolicies",
+                "iam:GetRolePolicy",
+                "iam:ListAttachedRolePolicies",
+                "iam:GetPolicy",
+                "iam:GetPolicyVersion"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "CloudWatchLogsAccess",
+            "Effect": "Allow",
+            "Action": [
+                "logs:DescribeLogGroups",
+                "logs:DescribeLogStreams"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "S3AccessForLambdaCode",
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": "arn:aws:s3:::*"
+        }
+    ]
+}
